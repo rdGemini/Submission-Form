@@ -1,0 +1,93 @@
+module.exports = {
+    mode: "jit",
+    purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    darkMode: false, // or 'media' or 'class'
+    theme: {
+        container: {
+            center: true,
+            padding: "2rem",
+        },
+        extend: {
+            backgroundImage: {
+                "intro-desktop": "url('/src/images/bg-intro-desktop.png')",
+                "intro-mobile": "url('/src/images/bg-intro-mobile.png')",
+            },
+            boxShadow: {
+                "hard-accent-blue": "0 8px 0 0 rgba(96, 85, 165, 0.3)",
+                "hard-gray": "0 10px 0 0 rgba(30, 30, 30, 0.2)",
+            },
+            zIndex: {
+                "-10": "-10",
+            },
+            fontFamily: {
+                poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+                "primary-red": {
+                    50: "#fff8f8",
+                    100: "#fff2f2",
+                    200: "#ffdede",
+                    300: "#ffcaca",
+                    400: "#ffa2a2",
+                    500: "#ff7a7a",
+                    600: "#e66e6e",
+                    700: "#bf5c5c",
+                    800: "#994949",
+                    900: "#7d3c3c",
+                },
+                "primary-green": {
+                    50: "#f5fcf9",
+                    100: "#ebfaf4",
+                    200: "#cdf2e2",
+                    300: "#afebd1",
+                    400: "#74dbaf",
+                    500: "#38cc8c",
+                    600: "#32b87e",
+                    700: "#2a9969",
+                    800: "#227a54",
+                    900: "#1b6445",
+                },
+                "accent-blue": {
+                    50: "#f7f7fb",
+                    100: "#efeef6",
+                    200: "#d7d5e9",
+                    300: "#bfbbdb",
+                    400: "#9088c0",
+                    500: "#6055a5",
+                    600: "#564d95",
+                    700: "#48407c",
+                    800: "#3a3363",
+                    900: "#2f2a51",
+                },
+                "neutral-dark-blue": {
+                    50: "#f5f5f6",
+                    100: "#ececed",
+                    200: "#cfced2",
+                    300: "#b2b1b6",
+                    400: "#787780",
+                    500: "#3e3c49",
+                    600: "#383642",
+                    700: "#2f2d37",
+                    800: "#25242c",
+                    900: "#1e1d24",
+                },
+                "neutral-grayish-blue": {
+                    50: "#fcfbfd",
+                    100: "#f8f8fb",
+                    200: "#eeedf4",
+                    300: "#e3e2ed",
+                    400: "#cecce0",
+                    500: "#b9b6d3",
+                    600: "#a7a4be",
+                    700: "#8b899e",
+                    800: "#6f6d7f",
+                    900: "#5b5967",
+                },
+            },
+        },
+    },
+    variants: {
+        extend: {},
+    },
+    plugins: [],
+};
